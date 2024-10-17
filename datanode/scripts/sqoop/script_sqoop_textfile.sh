@@ -1,8 +1,6 @@
 #!/bin/bash
 sqoop import \
---connect "jdbc:mysql://172.16.5.4:3310/retail_db" \
---username=root \
---password=root \
+--connect "jdbc:mysql://10.0.4.214:3310/retail_db" --username=root --password=root \
 --table customers \
 --as-textfile \
 --target-dir=/user/datapath/datasets/customers \
